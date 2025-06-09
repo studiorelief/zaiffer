@@ -1,0 +1,78 @@
+/*
+! SDK Cards
+*/
+
+.sdk_card_decorative {
+  transition: transform 0.3s ease-in-out;
+}
+
+.sdk_card:hover .sdk_card_decorative {
+  transform: rotateZ(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+/*
+! FHE Cards
+*/
+
+.fhe_card_decorative {
+  transition: transform 0.3s ease-in-out;
+}
+
+.fhe_card:hover .fhe_card_decorative {
+  transform: rotateZ(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* 
+! Experience Cards
+*/
+
+.experience_card_icon {
+  transition:
+    opacity 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.experience_card:hover .experience_card_icon {
+  color: var(--_brand---background--brand-yellow);
+  opacity: 1;
+}
+
+/*
+! Active Tabs cards 
+*/
+
+/* .product_tab-link {
+  height: 100%;
+  transition: height 0.3s ease-in-out;
+} */
+
+.product_tab-link.w--current .product_tab-active {
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.product_tab-link.w--current .icon-1x1-small {
+  transform: rotateZ(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product_tab-link-p {
+  /* display: none; */
+  margin-top: -2rem;
+  opacity: 0;
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out,
+    margin-top 0.3s ease-in-out;
+  transform: translateY(2rem);
+}
+
+.product_tab-link.w--current .product_tab-link-p {
+  margin-top: 0rem;
+  display: block;
+  opacity: 1;
+  transform: translateY(0rem);
+  animation-delay: 1s;
+}

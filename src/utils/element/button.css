@@ -1,0 +1,17 @@
+[data-wf--cc---global-button--mode-button---variables='is-secondary'] .button-text {
+  transition: transform 0.2s ease-in-out;
+}
+
+[data-wf--cc---global-button--mode-button---variables='is-secondary'] .button-icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+[data-wf--cc---global-button--mode-button---variables='is-secondary']:hover .button-icon {
+  transform: translateX(0.25rem);
+  transition: transform 0.2s ease-in-out;
+}
+
+[data-wf--cc---global-button--mode-button---variables='is-secondary']:hover .button-text {
+  transform: translateX(-0.125rem);
+  transition: transform 0.2s ease-in-out;
+}
