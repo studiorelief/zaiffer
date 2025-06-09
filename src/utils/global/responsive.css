@@ -1,0 +1,5 @@
+.hero_video-layer-query {
+  @media screen and (min-width: 95rem) {
+    display: flex;
+  }
+}
