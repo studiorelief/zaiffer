@@ -3,6 +3,7 @@ import './index.css';
 import { initAutoTabs } from '$utils/element/autoTabs';
 import { replaceHeroHeadings, swiperCrossfade } from '$utils/element/heroAnimation';
 import { initLogoParallax } from '$utils/element/logoParallax';
+import { popupComingSoon } from '$utils/element/popupComingSoon';
 import { initScrollFhe, initScrollHiw } from '$utils/element/scrollCards';
 import { initMarker } from '$utils/global/marker';
 import { initNavbar } from '$utils/global/navbar';
@@ -15,6 +16,7 @@ window.Webflow.push(() => {
   initMarker();
   svgComponent();
   initNavbar();
+  popupComingSoon();
 
   /* element */
   swiperCrossfade();
