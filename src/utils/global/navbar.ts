@@ -3,7 +3,7 @@ export function initNavbar() {
   const navMenu = document.querySelector('.navbar_menu-mobile') as HTMLElement;
   const closeButton = document.querySelector('.navbar_button-is-close') as HTMLElement;
   const openButton = document.querySelector('.navbar_button-is-open') as HTMLElement;
-  const navLinks = document.querySelectorAll('.navbar_link, .button, .navbar_logo-link');
+  // const navLinks = document.querySelectorAll('.navbar_link, .button, .navbar_logo-link');
   const linkWrapper = document.querySelector('.navbar_mobile-link-wrapper') as HTMLElement;
 
   if (!navButton || !navMenu || !closeButton || !openButton || !linkWrapper) return;
@@ -53,9 +53,9 @@ export function initNavbar() {
     }
   });
 
-  navLinks.forEach((link) => {
+  /* navLinks.forEach((link) => {
     link.addEventListener('click', closeNav);
-  });
+  }); */
 
   const mobileClose = document.querySelector('.navbar_mobile-close');
   if (mobileClose) {
