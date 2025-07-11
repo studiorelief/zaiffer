@@ -1,3 +1,5 @@
 @import './utils/element/cards.css';
 @import './utils/element/button.css';
 @import './utils/global/responsive.css';
+@import './utils/element/blog-cards.css';
+@import './utils/element/navbar.css';

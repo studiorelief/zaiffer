@@ -1,0 +1,35 @@
+/* cards - front-page */
+
+.blog_front-page_cards_cover {
+  transition: scale 0.3s ease-in-out;
+}
+
+.blog_front-page_cards:hover .blog_front-page_cards_cover {
+  scale: 1.05;
+}
+
+.blog_front-page_cards:hover .blog_front-page_category-name {
+  display: none;
+}
+
+.blog_front-page_cards:hover .blog_front-page_category {
+  display: block;
+}
+
+/* cards - grid */
+
+.blog_cards_cover {
+  transition: scale 0.3s ease-in-out;
+}
+
+.blog_cards:hover .blog_cards_cover {
+  scale: 1.05;
+}
+
+.blog_cards:hover .blog_cards_category-name {
+  display: none;
+}
+
+.blog_cards:hover .blog_cards_category {
+  display: block;
+}

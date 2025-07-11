@@ -62,3 +62,31 @@ export function initNavbar() {
     mobileClose.addEventListener('click', closeNav);
   }
 }
+
+export function setActiveNavLink() {
+  const currentUrl = window.location.pathname;
+
+  // Supprimer toutes les classes w--current existantes des liens dropdown
+  const dropdownLinks = document.querySelectorAll('.navbar_dropdown_link');
+  // dropdownLinks.forEach((link) => link.classList.remove('w--current'));
+
+  // Mapping URL -> texte du lien
+  const urlMappings = [
+    { path: '/articles/', text: 'Articles' },
+    { path: '/case-studies/', text: 'Case studies' },
+    { path: '/tutorials/', text: 'Tutorials' },
+  ];
+
+  // Trouver le mapping correspondant et ajouter la classe w--current
+  for (const mapping of urlMappings) {
+    if (currentUrl.includes(mapping.path)) {
+      const targetLink = Array.from(dropdownLinks).find(
+        (link) => link.textContent?.trim() === mapping.text
+      );
+      if (targetLink) {
+        targetLink.classList.add('w--current');
+        break; // Sortir après avoir trouvé le premier match
+      }
+    }
+  }
+}

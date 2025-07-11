@@ -1,0 +1,3 @@
+.navbar_dropdown:has(.w--current) .navbar_link {
+  color: var(--_brand---text--secondary);
+}
